@@ -1,0 +1,102 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+        <!--Welcome Section-->
+
+        <header id="home-header">
+                <div class="home-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="p-5">
+                                <h1 class="display-4 text-center">
+                                    What does <strong>TickerInsights</strong> provide?
+                                </h1>
+                                    <div class="d-flex flex-row text-center pt-3">
+                                        <p class="lead">We write scripts in Python to compile large amounts of data and generate dynamic backtests based on the ticker symbol you enter. Until <strong>TickerInsights</strong>, resources that provide insight into important backtests on securities have only been available to large firms.</p>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <div class="p-4 align-self-start">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="p-4 align-self-end">
+                                            <h6>Make more informed investment decisions.</h6>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <div class="p-4 align-self-start">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="p-4 align-self-end">
+                                            <h6>Level the playing field with large firms.</h6>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <div class="p-4 align-self-start">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="p-4 align-self-end">
+                                            <h6>Visualize how an event effects a specific equity.</h6> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+    
+            <!--Progress bar-->
+    
+            <div id="progress-bar">
+                <div class="p-5">
+                    <h4 class="text-center">
+                        We pull our data from the <a href="https://iextrading.com/developer/">IEX</a> API.
+                    </h4>
+                    <div class="progress my-5" style="height: 30px;"">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><strong>5 Years Worth of High Quality End of Day Data.</strong></div>
+                    </div>
+                    <div class="progress my-5" style="height: 30px;">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><strong>8,681 Different Ticker Symbols Supported</strong></div>
+                    </div>
+                    <div class="progress my-5" style="height: 30px;">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><strong>New Data Updated Every Trading Day</strong></div>
+                    </div>      
+                </div>
+            
+            <!--Jumbotron and Sign Up-->
+    
+            <div id="home-end">
+                <div class=p-5>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="p-4"></div>
+                                <p><strong>TickerInsights</strong> is constantly working to produce more backtests. We will always try to provide the most beneficial information to help you navigate the markets.</p>
+                                    <hr class="my-4">
+                                        <p>Sign up to recieve emails when we release a new backtest.</p>
+                        </div>
+    
+                        <div class="col-lg-4">
+    
+                            <div class="p-4"></div>
+    
+                                <div class="card text-center card-form bg-dark">
+                                    <div class="card-body">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <input type="Name" class="form-control" placeholder="Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="Email">
+                                            </div>
+                                                <input type="Submit" value="Submit" class="btn btn-outline-light btn-block">
+                                        </form>
+                                    
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="p-4"></div>
+
+            </div>
+{% endblock %}

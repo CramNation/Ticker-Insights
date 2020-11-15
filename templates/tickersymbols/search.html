@@ -1,0 +1,41 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+{% load static %}
+        <!--Particles-->
+            <script src="{% static 'particles/particles.js' %}" defer="defer"></script>
+        
+            <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+            
+        
+            <!--Search Bar-->
+            
+                <div class="container p-5">
+                    <div id="particles-js">
+                    <div class="column">
+                        <h1 class="display-4 text-center" >Enter the Symbol of an Equity</h1>
+                            <div class="flex-column form-inline">
+                        
+                            <div class="p-2"></div>
+
+                                <div class="pl-3 form-group form-inline justify-content-center">
+                                  <form name="symbol" class="form-inline form-row" action="{% url 'earnings' %}" method="GET">
+                                        <div class="col">
+                                            <input id="symbol" name="symbol" class="form-control form-control-md text-center" type="text" placeholder="AAPL">
+                                        </div>
+                                        <div class="col mr">
+                                            <button class="btn btn-outline-info d-none d-md-block" type="submit">Search</button>
+                                        </div>           
+                                    </form>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+              
+
+
+        <div class="p-5"></div>
+
+
+{% endblock %}

@@ -1,0 +1,43 @@
+#bootstrap-overrides input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="url"]:focus, textarea:focus {
+  outline-style: hidden;
+  outline-color: #1193A5; }
+
+body {
+  background: #fff; }
+
+.navbar {
+  border-bottom: #1193A5 2px solid;
+  opacity: 0.95; }
+
+.fa {
+  color: #1193A5;
+  background: gainsboro;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 35px; }
+
+#progress-bar {
+  background: lightgray; }
+
+#home-end {
+  background: #fff; }
+
+#main-footer {
+  border-top: #1193A5 2px solid;
+  opacity: 0.95; }
+
+.navbar-brand {
+  height: 1px; }
+
+#sidebar {
+  background-color: silver;
+  border-radius: 10px; }
+
+#sidebar .active {
+  color: #fff; }
+
+#sidebar a {
+  color: #000; }
+
+#stats {
+  background-color: #fff; }

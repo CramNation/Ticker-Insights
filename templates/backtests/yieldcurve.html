@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid pt-3">
+              
+        <form action="{% url 'earnings' %}"method="GET">
+            <div class="row">
+                <div class="col-2">
+                    <input name="symbol" class="form-control form-control-md text-center ml-2" type="text" placeholder="{{symbol}}"> 
+                </div>
+    
+                <div>
+                    <button class="btn btn-outline-info d-none d-md-block" type="submit">Search</button>
+                </div>
+       
+                <div class="col-7 col-sm-8 col-md-6 col-xl-6 form-inline justify-content-center">
+                    <h1><strong> {{symbol}} </strong></h1>
+                </div>
+            
+                <div class="mx-auto col-6">
+                    <hr class="my-2">
+                </div>
+            </div>
+        </form> 
+    </div>
+
+{% include 'partials/_sidebar.html' %}
+        <!--Graph/Data-->
+
+        <div id="stats">
+            <div class="pl-4">
+                <h1>{{ call_output }}</h1>
+            </div>
+        </div>
+
+<div class="p-5"></div>
+
+
+<div class="p-5"></div> 
+
+
+{% endblock %}
